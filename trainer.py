@@ -30,12 +30,7 @@ def _train(args):
             args["model_name"], "_seed_",
             str(args["seed"])
         ]), 
-        config={
-            "model_name": args["model_name"],
-            "conv_type": args["convnet_type"],
-            "dataset": args["dataset"],
-            "prefix": args["prefix"]
-        }
+        config=args
     )
 
 
